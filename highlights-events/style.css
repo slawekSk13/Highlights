@@ -1,0 +1,294 @@
+.photos {
+  line-height: 100px;
+  -webkit-column-count: 2;
+  -webkit-column-gap: 50px;
+  -moz-column-count: 2;
+  -moz-column-gap: 50px;
+  -ms-column-count: 2;
+  -ms-column-gap: 50px;
+  column-count: 2;
+  column-gap: 50px;
+}
+
+.photos-oferta {
+  display: flex;
+  justify-content: space-between;
+}
+
+.photos-oferta img {
+  width: 24.8%;
+}
+
+.filmy, .oferta, .o-mnie {
+  margin-top: 50px;
+  align-items: center;
+}
+
+.o-mnie {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.naglowek-oferty {
+  text-transform: uppercase;
+  display: block;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.oferta {
+  text-align: center;
+}
+
+.oferta p {
+  padding: 30px 20%;
+}
+
+.oferta-kolumna {
+  text-align: left;
+  margin: auto 50px;
+}
+
+.oferta-kolumna h2 {
+  text-align: center;
+}
+
+.oferta-roznica {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.oferta-kolumna hr {
+  width: 300px;
+}
+
+.o-mnie-tekst {
+  flex: 60%;
+  padding: 0 10%;
+  vertical-align: middle;
+}
+
+.o-mnie-zdjecie {
+  flex: 40%;
+}
+
+.o-mnie-zdjecie img {
+  object-fit: cover;
+  margin-top: 0;
+}
+
+.testimonial {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.testimonial-photo {
+  flex: 40%;
+  text-align: center;
+}
+
+.testimonial-image {
+  border-radius: 100%;
+  margin-bottom: 30px;
+  margin-top: 0;
+  width: 80%;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  margin-top: 50px;
+}
+
+/* film */
+.film-responsive-container {
+  position: relative;
+  overflow: hidden;
+  margin-top: 50px;
+  padding-top: 56.25%;
+}
+
+
+.film-responsive-container iframe {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 0;
+}
+
+/* info */
+.contact {
+  margin-top: 20px;
+  text-align: center;
+  line-height: 2;
+}
+
+.contact i {
+  margin-left: 30px;
+}
+
+/* .photos-full {
+
+} */
+body, header, footer {
+  color: #393e46;
+  margin: 0;
+  padding: 0 6%;
+  background-color: #f2f2f2;
+  font-family: 'Kanit', sans-serif;
+  font-weight: 300;
+}
+
+a {
+  color: #393e46;
+}
+
+a:hover {
+  color: #222831;
+  text-decoration: none;
+}
+
+/* navbar */
+.margines {
+  height: 60px;
+}
+
+.logo {
+  width: 96px;
+  padding: 0;
+  position: relative;
+  top: -30px;
+}
+
+.menu-link {
+  color: #393e46;
+}
+
+.menu-link:hover {
+  color: #222831;
+}
+
+.navbar {
+  padding-top: 0;
+  padding-bottom: 0
+}
+
+.linia {
+  display: none;
+}
+
+.linia hr {
+  width: 160px;
+  margin: 0;
+  padding: 0;
+}
+
+/* .linia {
+  text-align: left;
+} */
+/* footer */
+footer i {
+  margin: 50px 15px 0;
+  color: #393e46;
+}
+
+i:hover {
+  color: #222831;
+}
+
+footer {
+  text-align: center;
+}
+
+
+@media (min-width:1201px) {
+  .navbar-expand-custom {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+  }
+
+  .navbar-expand-custom .navbar-nav {
+    flex-direction: row;
+  }
+
+  .navbar-expand-custom .navbar-nav .nav-link {
+    padding-right: .5rem;
+    padding-left: .5rem;
+  }
+
+  .navbar-expand-custom .navbar-collapse {
+    display: flex !important;
+  }
+
+  .navbar-expand-custom .navbar-toggler {
+    display: none;
+  }
+}
+
+@media (max-width: 1200px) {
+  .photos {
+    -moz-column-count: 1;
+    -ms-column-count: 1;
+    -webkit-column-count: 1;
+    column-count: 1;
+  }
+
+  .photos-oferta img {
+    width: 49.5%;
+    margin-top: 1.5%;
+  }
+
+  .photos-oferta {
+    flex-wrap: wrap;
+  }
+
+  .fill {
+    display: none;
+  }
+
+  .oferta, .o-mnie, .testimonial {
+    flex-direction: column;
+  }
+
+  .o-mnie-tekst {
+    margin-top: 40px;
+  }
+
+  .testimonial-image {
+    margin-top: 50px;
+  }
+
+  .opis-publikacji {
+    padding-right: auto;
+  }
+
+  .lead {
+    font-size: 2rem;
+  }
+
+  body {
+    font-size: 1.8rem;
+  }
+
+  .custom-toggler, .menu-link {
+    font-size: 3rem !important;
+  }
+
+  .linia {
+    display: flex;
+  }
+
+  .separator-menu-pion {
+    display: none;
+  }
+}
+
+.custom-toggler, .menu-link {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+}

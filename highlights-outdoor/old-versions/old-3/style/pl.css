@@ -1,0 +1,11 @@
+.gb {
+  opacity: 30%;
+}
+
+.gb:hover {
+  opacity: 100%;
+}
+
+.gb, .pl {
+  width: 50px;
+}

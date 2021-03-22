@@ -1,0 +1,7 @@
+.pl {
+  opacity: 30%;
+}
+
+.pl:hover {
+  opacity: 100%;
+}

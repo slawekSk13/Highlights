@@ -1,0 +1,1034 @@
+<!DOCTYPE html>
+<html lang="pl" dir="ltr">
+
+<head>
+  <base target="_blank">
+  <meta name="keywords" content="fotografia, fotografia wyprawowa, outdoor, przygoda, film outdoorowy, góry, sport, fotograf sportowy, narty, wspinanie">
+  <meta name="description" content="Strona fotografa specjalizującego się w branży outdoorowej, zdjęcia i filmy gór, sportów górkich i sprzętu górskiego">
+  <meta charset="utf-8">
+  <!-- favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="images/hl-tlo.png">
+  <!-- font -->
+  <link href="https://fonts.googleapis.com/css?family=Kanit|Paytone+One&display=swap" rel="stylesheet">
+  <!-- javascript -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/b282f36c60.js" crossorigin="anonymous"></script>
+  <!-- style -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="style/styles.css">
+  <link rel="stylesheet" href="style/pl.css">
+  <title>Highlights Outdoor</title>
+</head>
+
+<body>
+
+  <header class="fixed-top">
+    <nav class="navbar navbar-expand-custom">
+      <a target="_self" class="navbar-brand" href="http://www.highlightsphoto.pl/outdoor"><img class="logo" src="images/hl.png" alt="Logo Highlights Pictures"></a>
+      <button class="custom-toggler navbar-toggler" data-toggle="collapse" type="button" name="button" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span></button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a target="_self" class="nav-link menu-link" href="zdjecia.html">Zdjęcia</a>
+          </li>
+
+          <li class="nav-item"><a target="_self" class="nav-link menu-link" href="filmy.html">Filmy</a>
+          </li>
+
+          <li class="nav-item"><a target="_self" class="nav-link menu-link" href="publikacje.html">Publikacje</a>
+          </li>
+          <li class="nav-item"><a target="_self" class="nav-link menu-link" href="o-mnie.html">O mnie</a>
+          </li>
+          <li class="nav-item"><a target="_self" class="nav-link menu-link" href="kontakt.html">Kontakt</a>
+          </li>
+          <li class="nav-item"><a target="_self" class="nav-link menu-link" href="en/zdjecia-en.html">
+              <img class="gb" src="images/en.png" alt="Click for english">
+            </a></li>
+          <li class="nav-item"><a target="_self" class="nav-link menu-link disabled" href="#">
+              <img class="pl" src="images/pl.png" alt="Wersja polskojęzyczna">
+            </a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <div class="margines">
+
+  </div>
+<div class="container galeria">
+
+    <div class="close invisible">
+      <!-- <i class="fas fa-times"></i> -->
+    </div>
+  <div class="previous invisible">
+<i class="fas fa-angle-double-left"></i>
+  </div>
+  <div class="next invisible">
+<i class="fas fa-angle-double-right"></i>
+  </div>
+  <div class="toolbar">
+    <div class="searchwrapper">
+    Jakie zdjęcia chcesz zobaczyć? <br>
+    <div class="container">
+      <!-- <form class="" action="index.html" method="post"> -->
+      <!-- <input list="kategoria"> -->
+
+        <input type="checkbox" id="trekking" value="trekking"> <label for="trekking">Trekking</label>
+        <input type="checkbox" id="ski" value="ski"> <label for="ski">Narty i snowboard</label>
+        <input type="checkbox" id="mountains" value="mountains" checked> <label for="mountains">Góry i jaskinie</label>
+        <br>
+        <input type="checkbox" id="running" value="running"> <label for="running">Bieganie</label>
+        <input type="checkbox" id="studio" value="studio"> <label for="studio">Studio</label>
+        <input type="checkbox" id="military" value="military"> <label for="military">Militarne</label>
+        <!-- <input type="checkbox" id="all" value="all"> <label for="all">Wszystkie</label> -->
+
+
+      <!-- </form> -->
+
+
+    <!-- <input class="search" type="search" placeholder=" Jakie zdjęcia chcesz obejrzeć?"> -->
+  </div>
+    <div class="counter">
+      Łącznie zdjęć: <span id="licznik">23</span>
+    </div>
+    </div>
+    <ul class="view-options">
+      <li class="zoom"> <input type="range" min="120" max="580" value="350"></li>
+      <li class="show-grid active"> <button disabled> <i class="fas fa-th"></i> </button> </li>
+      <li class="show-list"> <button> <i class="fas fa-list"></i> </button> </li>
+    </ul>
+  </div>
+<ol class="image-list grid-view">
+  <li class="trekking">
+  <figure>
+    <img src="images/photos/2018aura/highlights-outdoor096.jpg" alt="Zdjęcie">
+    <figcaption>
+      <p class="lead">luty 2018, Góry Stołowe</p>
+      <p>klient: <a href="http://aurapoland.com">Aura</a></p>
+    </figcaption>
+  </figure>
+</li>
+<li class="mountains">
+<figure>
+  <img src="images/photos/freeride/highlights-outdoor166.jpg" alt="Zdjęcie">
+  <figcaption>
+    <p class="lead">luty 2020, Tatry Wysokie</p>
+  </figcaption>
+</figure>
+</li>
+<li class="military">
+<figure>
+  <img src="images/photos/military/highlights-outdoor022.jpg" alt="Zdjęcie">
+  <figcaption>
+    <p class="lead">sierpień 2015, Polska</p>
+    <p>klient: <a href="http://downtofire.com">DTF Solutions</a></p>
+  </figcaption>
+</figure>
+</li>
+<li class="studio">
+<figure>
+  <img src="images/photos/studio/highlights-outdoor072.jpg" alt="Zdjęcie">
+  <figcaption>
+    <p class="lead">wrzesień 2019, Warszawa</p>
+    <p>klient: <a href="http://sportimpex.pl">Sportimpex</a></p>
+  </figcaption>
+</figure>
+</li>
+<li class="military">
+<figure>
+  <img src="images/photos/military/highlights-outdoor021.jpg" alt="Zdjęcie">
+  <figcaption>
+    <p class="lead">sierpień 2015, Polska</p>
+    <p>klient: <a href="http://downtofire.com">DTF Solutions</a></p>
+  </figcaption>
+</figure>
+</li>
+<li class="running">
+<figure>
+  <img src="images/photos/zuk2020/highlights-outdoor087.jpg" alt="Zdjęcie">
+  <figcaption>
+    <p class="lead">marzec 2020, Karkonosze</p>
+  </figcaption>
+</figure>
+</li>
+<li class="studio">
+<figure>
+  <img src="images/photos/studio/highlights-outdoor080.jpg" alt="Zdjęcie">
+  <figcaption>
+    <p class="lead">październik 2019, Warszawa</p>
+    <p>klient: <a href="http://aurapoland.com">Aura</a></p>
+  </figcaption>
+</figure>
+</li>
+<li class="mountains">
+<figure>
+  <img src="images/photos/kazbek/highlights-outdoor176.jpg" alt="Zdjęcie">
+  <figcaption>
+    <p class="lead">sierpień 2019, Kaukaz</p>
+    <p>klient: <a href="http://aurapoland.com">Aura</a></p>
+  </figcaption>
+</figure>
+</li>
+<li class="military">
+<figure>
+  <img src="images/photos/military/highlights-outdoor020.jpg" alt="Zdjęcie">
+  <figcaption>
+    <p class="lead">sierpień 2015, Polska</p>
+    <p>klient: <a href="http://downtofire.com">DTF Solutions</a></p>
+  </figcaption>
+</figure>
+</li>
+<li class="running">
+<figure>
+  <img src="images/photos/zuk2020/highlights-outdoor086.jpg" alt="Zdjęcie">
+  <figcaption>
+    <p class="lead">marzec 2020, Karkonosze</p>
+  </figcaption>
+</figure>
+</li>
+<li class="studio">
+<figure>
+  <img src="images/photos/studio/highlights-outdoor073.jpg" alt="Zdjęcie">
+  <figcaption>
+    <p class="lead">czerwiec 2019, Warszawa</p>
+    <p>klient: <a href="http://aurapoland.com">Aura</a></p>
+  </figcaption>
+</figure>
+</li>
+<li class="ski">
+<figure>
+  <img src="images/photos/freeride/highlights-outdoor085.jpg" alt="Zdjęcie">
+  <figcaption>
+    <p class="lead">marzec 2020, Tatry Wysokie</p>
+    <p>klient: <a href="http://aurapoland.com">Aura</a></p>
+  </figcaption>
+</figure>
+</li>
+<li class="studio">
+<figure>
+  <img src="images/photos/studio/highlights-outdoor013.jpg" alt="Zdjęcie">
+  <figcaption>
+    <p class="lead">grudzień 2018, Warszawa</p>
+    <p>klient: <a href="http://aurapoland.com">Aura</a></p>
+  </figcaption>
+</figure>
+</li>
+<li class="trekking">
+<figure>
+  <img src="images/photos/2018aura/highlights-outdoor098.jpg" alt="Zdjęcie">
+  <figcaption>
+    <p class="lead">luty 2018, Ojcowski Park Narodowy</p>
+    <p>klient: <a href="http://aurapoland.com">Aura</a></p>
+  </figcaption>
+</figure>
+</li>
+<li class="mountains">
+<figure>
+  <img src="images/photos/freeride/highlights-outdoor167.jpg" alt="Zdjęcie">
+  <figcaption>
+    <p class="lead">luty 2020, Tatry Wysokie</p>
+  </figcaption>
+</figure>
+</li>
+<li class="running">
+<figure>
+  <img src="images/photos/zuk2020/highlights-outdoor088.jpg" alt="Zdjęcie">
+  <figcaption>
+    <p class="lead">marzec 2020, Karkonosze</p>
+  </figcaption>
+</figure>
+</li>
+<li class="military">
+<figure>
+  <img src="images/photos/military/highlights-outdoor024.jpg" alt="Zdjęcie">
+  <figcaption>
+    <p class="lead">sierpień 2015, Polska</p>
+    <p>klient: <a href="http://downtofire.com">DTF Solutions</a></p>
+  </figcaption>
+</figure>
+</li>
+<li class="studio">
+<figure>
+  <img src="images/photos/studio/highlights-outdoor074.jpg" alt="Zdjęcie">
+  <figcaption>
+    <p class="lead">czerwiec 2019, Warszawa</p>
+    <p>klient: <a href="http://aurapoland.com">Aura</a></p>
+  </figcaption>
+</figure>
+</li>
+<li class="studio">
+<figure>
+  <img src="images/photos/studio/highlights-outdoor075.jpg" alt="Zdjęcie">
+  <figcaption>
+    <p class="lead">czerwiec 2019, Warszawa</p>
+    <p>klient: <a href="http://aurapoland.com">Aura</a></p>
+  </figcaption>
+</figure>
+</li>
+<li class="ski">
+<figure>
+  <img src="images/photos/freeride/highlights-outdoor144.jpg" alt="Zdjęcie">
+  <figcaption>
+    <p class="lead">styczeń 2020, Alpy Bergamskie</p>
+    <p>klient: <a href="http://rascrepublic.pl">RASC Republic</a></p>
+  </figcaption>
+</figure>
+</li>
+<li class="mountains">
+<figure>
+  <img src="images/photos/kazbek/highlights-outdoor174.jpg" alt="Zdjęcie">
+  <figcaption>
+    <p class="lead">sierpień 2019, Kaukaz</p>
+    <p>klient: <a href="http://aurapoland.com">Aura</a></p>
+  </figcaption>
+</figure>
+</li>
+<li class="military">
+<figure>
+  <img src="images/photos/military/highlights-outdoor026.jpg" alt="Zdjęcie">
+  <figcaption>
+    <p class="lead">sierpień 2015, Polska</p>
+    <p>klient: <a href="http://downtofire.com">DTF Solutions</a></p>
+  </figcaption>
+</figure>
+</li>
+<li class="running">
+<figure>
+  <img src="images/photos/zuk2020/highlights-outdoor089.jpg" alt="Zdjęcie">
+  <figcaption>
+    <p class="lead">marzec 2020, Karkonosze</p>
+  </figcaption>
+</figure>
+</li>
+<li class="trekking">
+<figure>
+  <img src="images/photos/2018aura/highlights-outdoor102.jpg" alt="Zdjęcie">
+  <figcaption>
+    <p class="lead">luty 2018, Góry Stołowe</p>
+    <p>klient: <a href="http://aurapoland.com">Aura</a></p>
+  </figcaption>
+</figure>
+</li>
+<li class="mountains">
+<figure>
+  <img src="images/photos/kazbek/highlights-outdoor175.jpg" alt="Zdjęcie">
+  <figcaption>
+    <p class="lead">sierpień 2019, Kaukaz</p>
+    <p>klient: <a href="http://aurapoland.com">Aura</a></p>
+  </figcaption>
+</figure>
+</li>
+<li class="ski">
+<figure>
+  <img src="images/photos/freeride/highlights-outdoor147.jpg" alt="Zdjęcie">
+  <figcaption>
+    <p class="lead">styczeń 2020, Alpy Bergamskie</p>
+    <p>klient: <a href="http://rascrepublic.pl">RASC Republic</a></p>
+  </figcaption>
+</figure>
+</li>
+<li class="trekking">
+<figure>
+  <img src="images/photos/2018aura/highlights-outdoor105.jpg" alt="Zdjęcie">
+  <figcaption>
+    <p class="lead">luty 2018, Góry Stołowe</p>
+    <p>klient: <a href="http://aurapoland.com">Aura</a></p>
+  </figcaption>
+</figure>
+</li>
+<li class="studio">
+<figure>
+  <img src="images/photos/sztuka-zywienia/highlights-outdoor059.jpg" alt="Zdjęcie">
+  <figcaption>
+    <p class="lead">październik 2016, Pruszków</p>
+    <p>klient: <a href="https://www.sztukazywienia.com/">Sztuka Żywienia</a></p>
+  </figcaption>
+</figure>
+</li>
+<li class="military">
+<figure>
+  <img src="images/photos/military/highlights-outdoor028.jpg" alt="Zdjęcie">
+  <figcaption>
+    <p class="lead">sierpień 2015, Polska</p>
+    <p>klient: <a href="http://downtofire.com">DTF Solutions</a></p>
+  </figcaption>
+</figure>
+</li>
+<li class="ski">
+<figure>
+  <img src="images/photos/freeride/highlights-outdoor150.jpg" alt="Zdjęcie">
+  <figcaption>
+    <p class="lead">styczeń 2020, Alpy Bergamskie</p>
+    <p>klient: <a href="http://rascrepublic.pl">RASC Republic</a></p>
+  </figcaption>
+</figure>
+</li>
+<li class="running">
+<figure>
+  <img src="images/photos/zuk2020/highlights-outdoor090.jpg" alt="Zdjęcie">
+  <figcaption>
+    <p class="lead">marzec 2020, Karkonosze</p>
+  </figcaption>
+</figure>
+</li>
+<li class="trekking">
+<figure>
+  <img src="images/photos/2018aura/highlights-outdoor111.jpg" alt="Zdjęcie">
+  <figcaption>
+    <p class="lead">luty 2018, Góry Stołowe</p>
+    <p>klient: <a href="http://aurapoland.com">Aura</a></p>
+  </figcaption>
+</figure>
+</li>
+<li class="studio">
+<figure>
+  <img src="images/photos/studio/highlights-outdoor014.jpg" alt="Zdjęcie">
+  <figcaption>
+    <p class="lead">grudzień 2019, Warszawa</p>
+    <p>klient: <a href="http://aurapoland.com">Aura</a></p>
+  </figcaption>
+</figure>
+</li>
+<li class="military">
+<figure>
+  <img src="images/photos/military/highlights-outdoor031.jpg" alt="Zdjęcie">
+  <figcaption>
+    <p class="lead">sierpień 2015, Polska</p>
+    <p>klient: <a href="http://downtofire.com">DTF Solutions</a></p>
+  </figcaption>
+</figure>
+</li>
+<li class="mountains">
+<figure>
+  <img src="images/photos/sokoliki2016/highlights-outdoor009.jpg" alt="Zdjęcie">
+  <figcaption>
+    <p class="lead">styczeń 2016, Sokoliki</p>
+    <p>klient: <a href="http://aurapoland.com">Aura</a></p>
+  </figcaption>
+</figure>
+</li>
+<li class="mountains">
+<figure>
+  <img src="images/photos/freeride/highlights-outdoor168.jpg" alt="Zdjęcie">
+  <figcaption>
+    <p class="lead">luty 2020, Tatry Wysokie</p>
+  </figcaption>
+</figure>
+</li>
+<li class="ski">
+<figure>
+  <img src="images/photos/freeride/highlights-outdoor151.jpg" alt="Zdjęcie">
+  <figcaption>
+    <p class="lead">styczeń 2020, Alpy Bergamskie</p>
+    <p>klient: <a href="http://rascrepublic.pl">RASC Republic</a></p>
+  </figcaption>
+</figure>
+</li>
+<li class="military">
+<figure>
+  <img src="images/photos/military/highlights-outdoor037.jpg" alt="Zdjęcie">
+  <figcaption>
+    <p class="lead">sierpień 2015, Polska</p>
+    <p>klient: <a href="http://downtofire.com">DTF Solutions</a></p>
+  </figcaption>
+</figure>
+</li>
+<li class="mountains">
+<figure>
+  <img src="images/photos/2018aura/highlights-outdoor114.jpg" alt="Zdjęcie">
+  <figcaption>
+    <p class="lead">luty 2018, Jura Krakowsko-Częstochowska</p>
+    <p>klient: <a href="http://aurapoland.com">Aura</a></p>
+  </figcaption>
+</figure>
+</li>
+<li class="running">
+<figure>
+  <img src="images/photos/zuk2020/highlights-outdoor091.jpg" alt="Zdjęcie">
+  <figcaption>
+    <p class="lead">marzec 2020, Karkonosze</p>
+  </figcaption>
+</figure>
+</li>
+<li class="studio">
+<figure>
+  <img src="images/photos/studio/highlights-outdoor015.jpg" alt="Zdjęcie">
+  <figcaption>
+    <p class="lead">grudzień 2019, Warszawa</p>
+    <p>klient: <a href="http://aurapoland.com">Aura</a></p>
+  </figcaption>
+</figure>
+</li>
+<li class="ski">
+<figure>
+  <img src="images/photos/freeride/highlights-outdoor153.jpg" alt="Zdjęcie">
+  <figcaption>
+    <p class="lead">styczeń 2020, Alpy Bergamskie</p>
+    <p>klient: <a href="http://rascrepublic.pl">RASC Republic</a></p>
+  </figcaption>
+</figure>
+</li>
+<li class="trekking">
+<figure>
+  <img src="images/photos/2018aura/highlights-outdoor115.jpg" alt="Zdjęcie">
+  <figcaption>
+    <p class="lead">luty 2018, Ojcowski Park Narodowy</p>
+    <p>klient: <a href="http://aurapoland.com">Aura</a></p>
+  </figcaption>
+</figure>
+</li>
+<li class="military">
+<figure>
+  <img src="images/photos/military/highlights-outdoor039.jpg" alt="Zdjęcie">
+  <figcaption>
+    <p class="lead">sierpień 2015, Polska</p>
+    <p>klient: <a href="http://downtofire.com">DTF Solutions</a></p>
+  </figcaption>
+</figure>
+</li>
+<li class="ski">
+<figure>
+  <img src="images/photos/freeride/highlights-outdoor155.jpg" alt="Zdjęcie">
+  <figcaption>
+    <p class="lead">styczeń 2020, Alpy Bergamskie</p>
+    <p>klient: <a href="http://rascrepublic.pl">RASC Republic</a></p>
+  </figcaption>
+</figure>
+</li>
+<li class="studio">
+<figure>
+  <img src="images/photos/sztuka-zywienia/highlights-outdoor061.jpg" alt="Zdjęcie">
+  <figcaption>
+    <p class="lead">październik 2016, Pruszków</p>
+    <p>klient: <a href="https://www.sztukazywienia.com/">Sztuka Żywienia</a></p>
+  </figcaption>
+</figure>
+</li>
+<li class="mountains">
+<figure>
+  <img src="images/photos/2018aura/highlights-outdoor117.jpg" alt="Zdjęcie">
+  <figcaption>
+    <p class="lead">marzec 2018, Karkonosze</p>
+    <p>klient: <a href="http://aurapoland.com">Aura</a></p>
+  </figcaption>
+</figure>
+</li>
+<li class="military">
+<figure>
+  <img src="images/photos/military/highlights-outdoor048.jpg" alt="Zdjęcie">
+  <figcaption>
+    <p class="lead">sierpień 2015, Polska</p>
+    <p>klient: <a href="http://downtofire.com">DTF Solutions</a></p>
+  </figcaption>
+</figure>
+</li>
+<li class="ski">
+<figure>
+  <img src="images/photos/freeride/highlights-outdoor159.jpg" alt="Zdjęcie">
+  <figcaption>
+    <p class="lead">styczeń 2020, Alpy Bergamskie</p>
+    <p>klient: <a href="http://rascrepublic.pl">RASC Republic</a></p>
+  </figcaption>
+</figure>
+</li>
+<li class="mountains">
+<figure>
+  <img src="images/photos/2018aura/highlights-outdoor118.jpg" alt="Zdjęcie">
+  <figcaption>
+    <p class="lead">marzec 2018, Karkonosze</p>
+    <p>klient: <a href="http://aurapoland.com">Aura</a></p>
+  </figcaption>
+</figure>
+</li>
+<li class="trekking">
+<figure>
+  <img src="images/photos/sokoliki2016/highlights-outdoor004.jpg" alt="Zdjęcie">
+  <figcaption>
+    <p class="lead">styczeń 2016, Sokoliki</p>
+    <p>klient: <a href="http://aurapoland.com">Aura</a></p>
+  </figcaption>
+</figure>
+</li>
+<li class="military">
+<figure>
+  <img src="images/photos/military/highlights-outdoor040.jpg" alt="Zdjęcie">
+  <figcaption>
+    <p class="lead">sierpień 2015, Polska</p>
+    <p>klient: <a href="http://downtofire.com">DTF Solutions</a></p>
+  </figcaption>
+</figure>
+</li>
+<li class="running">
+<figure>
+  <img src="images/photos/zuk2020/highlights-outdoor092.jpg" alt="Zdjęcie">
+  <figcaption>
+    <p class="lead">marzec 2020, Karkonosze</p>
+  </figcaption>
+</figure>
+</li>
+<li class="ski">
+<figure>
+  <img src="images/photos/freeride/highlights-outdoor161.jpg" alt="Zdjęcie">
+  <figcaption>
+    <p class="lead">luty 2020, Tatry Zachodnie</p>
+  </figcaption>
+</figure>
+</li>
+<li class="military">
+<figure>
+  <img src="images/photos/military/highlights-outdoor047.jpg" alt="Zdjęcie">
+  <figcaption>
+    <p class="lead">sierpień 2015, Polska</p>
+    <p>klient: <a href="http://downtofire.com">DTF Solutions</a></p>
+  </figcaption>
+</figure>
+</li>
+<li class="mountains">
+<figure>
+  <img src="images/photos/2018aura/highlights-outdoor119.jpg" alt="Zdjęcie">
+  <figcaption>
+    <p class="lead">luty 2018, Jura Krakowsko-Częstochowska</p>
+    <p>klient: <a href="http://aurapoland.com">Aura</a></p>
+  </figcaption>
+</figure>
+</li>
+<li class="ski">
+<figure>
+  <img src="images/photos/freeride/highlights-outdoor162.jpg" alt="Zdjęcie">
+  <figcaption>
+    <p class="lead">luty 2020, Tatry Zachodnie</p>
+  </figcaption>
+</figure>
+</li>
+<li class="trekking">
+<figure>
+  <img src="images/photos/2018aura/highlights-outdoor121.jpg" alt="Zdjęcie">
+  <figcaption>
+    <p class="lead">luty 2018, Ojcowski Park Narodowy</p>
+    <p>klient: <a href="http://aurapoland.com">Aura</a></p>
+  </figcaption>
+</figure>
+</li>
+<li class="military">
+<figure>
+  <img src="images/photos/military/highlights-outdoor050.jpg" alt="Zdjęcie">
+  <figcaption>
+    <p class="lead">sierpień 2015, Polska</p>
+    <p>klient: <a href="http://downtofire.com">DTF Solutions</a></p>
+  </figcaption>
+</figure>
+</li>
+<li class="ski">
+<figure>
+  <img src="images/photos/freeride/highlights-outdoor163.jpg" alt="Zdjęcie">
+  <figcaption>
+    <p class="lead">luty 2020, Tatry Zachodnie</p>
+  </figcaption>
+</figure>
+</li>
+<li class="trekking">
+<figure>
+  <img src="images/photos/sokoliki2016/highlights-outdoor003.jpg" alt="Zdjęcie">
+  <figcaption>
+    <p class="lead">styczeń 2016, Sokoliki</p>
+    <p>klient: <a href="http://aurapoland.com">Aura</a></p>
+  </figcaption>
+</figure>
+</li>
+<li class="mountains">
+<figure>
+  <img src="images/photos/2018aura/highlights-outdoor122.jpg" alt="Zdjęcie">
+  <figcaption>
+    <p class="lead">marzec 2018, Karkonosze</p>
+    <p>klient: <a href="http://aurapoland.com">Aura</a></p>
+  </figcaption>
+</figure>
+</li>
+<li class="ski">
+<figure>
+  <img src="images/photos/freeride/highlights-outdoor164.jpg" alt="Zdjęcie">
+  <figcaption>
+    <p class="lead">luty 2020, Tatry Zachodnie</p>
+  </figcaption>
+</figure>
+</li>
+<li class="mountains">
+<figure>
+  <img src="images/photos/2018aura/highlights-outdoor123.jpg" alt="Zdjęcie">
+  <figcaption>
+    <p class="lead">luty 2018, Jura Krakowsko-Częstochowska</p>
+    <p>klient: <a href="http://aurapoland.com">Aura</a></p>
+  </figcaption>
+</figure>
+</li>
+<li class="military">
+<figure>
+  <img src="images/photos/military/highlights-outdoor052.jpg" alt="Zdjęcie">
+  <figcaption>
+    <p class="lead">sierpień 2015, Polska</p>
+    <p>klient: <a href="http://downtofire.com">DTF Solutions</a></p>
+  </figcaption>
+</figure>
+</li>
+<li class="ski">
+<figure>
+  <img src="images/photos/freeride/highlights-outdoor165.jpg" alt="Zdjęcie">
+  <figcaption>
+    <p class="lead">luty 2020, Tatry Zachodnie</p>
+  </figcaption>
+</figure>
+</li>
+<li class="trekking">
+<figure>
+  <img src="images/photos/2018aura/highlights-outdoor125.jpg" alt="Zdjęcie">
+  <figcaption>
+    <p class="lead">luty 2018, Góry Stołowe</p>
+    <p>klient: <a href="http://aurapoland.com">Aura</a></p>
+  </figcaption>
+</figure>
+</li>
+<li class="running">
+<figure>
+  <img src="images/photos/zuk2020/highlights-outdoor093.jpg" alt="Zdjęcie">
+  <figcaption>
+    <p class="lead">marzec 2020, Karkonosze</p>
+  </figcaption>
+</figure>
+</li>
+<li class="trekking">
+<figure>
+  <img src="images/photos/2018aura/highlights-outdoor141.jpg" alt="Zdjęcie">
+  <figcaption>
+    <p class="lead">luty 2018, Góry Stołowe</p>
+    <p>klient: <a href="http://aurapoland.com">Aura</a></p>
+  </figcaption>
+</figure>
+</li>
+<li class="mountains">
+<figure>
+  <img src="images/photos/2018aura/highlights-outdoor169.jpg" alt="Zdjęcie">
+  <figcaption>
+    <p class="lead">luty 2019, Tatry Wysokie</p>
+    <p>klient: <a href="http://aurapoland.com">Aura</a></p>
+  </figcaption>
+</figure>
+</li>
+<li class="mountains">
+<figure>
+  <img src="images/photos/2018aura/highlights-outdoor170.jpg" alt="Zdjęcie">
+  <figcaption>
+    <p class="lead">luty 2019, Tatry Wysokie</p>
+    <p>klient: <a href="http://aurapoland.com">Aura</a></p>
+  </figcaption>
+</figure>
+</li>
+<li class="mountains">
+<figure>
+  <img src="images/photos/2018aura/highlights-outdoor171.jpg" alt="Zdjęcie">
+  <figcaption>
+    <p class="lead">luty 2019, Tatry Wysokie</p>
+    <p>klient: <a href="http://aurapoland.com">Aura</a></p>
+  </figcaption>
+</figure>
+</li>
+<li class="mountains">
+<figure>
+  <img src="images/photos/2018aura/highlights-outdoor172.jpg" alt="Zdjęcie">
+  <figcaption>
+    <p class="lead">luty 2019, Tatry Wysokie</p>
+    <p>klient: <a href="http://aurapoland.com">Aura</a></p>
+  </figcaption>
+</figure>
+</li>
+<li class="mountains">
+<figure>
+  <img src="images/photos/2018aura/highlights-outdoor173.jpg" alt="Zdjęcie">
+  <figcaption>
+    <p class="lead">luty 2019, Tatry Wysokie</p>
+    <p>klient: <a href="http://aurapoland.com">Aura</a></p>
+  </figcaption>
+</figure>
+</li>
+<li class="studio">
+<figure>
+  <img class="pion" src="images/photos/studio/highlights-outdoor016.jpg" alt="Zdjęcie">
+  <figcaption>
+    <p class="lead">lipiec 2018, Warszawa</p>
+    <p>klient: <a href="http://aurapoland.com">Aura</a></p>
+  </figcaption>
+</figure>
+</li>
+<li class="studio">
+<figure>
+  <img class="pion" src="images/photos/studio/highlights-outdoor017.jpg" alt="Zdjęcie">
+  <figcaption>
+    <p class="lead">wrzesień 2019, Warszawa</p>
+    <p>klient: <a href="http://aurapoland.com">Aura</a></p>
+  </figcaption>
+</figure>
+</li>
+<li class="studio">
+<figure>
+  <img class="pion" src="images/photos/studio/highlights-outdoor018.jpg" alt="Zdjęcie">
+  <figcaption>
+    <p class="lead">wrzesień 2019, Warszawa</p>
+    <p>klient: <a href="http://aurapoland.com">Aura</a></p>
+  </figcaption>
+</figure>
+</li>
+<li class="studio">
+<figure>
+  <img class="pion" src="images/photos/studio/highlights-outdoor019.jpg" alt="Zdjęcie">
+  <figcaption>
+    <p class="lead">wrzesień 2019, Warszawa</p>
+    <p>klient: <a href="http://aurapoland.com">Aura</a></p>
+  </figcaption>
+</figure>
+</li>
+<li class="mountains">
+<figure>
+  <img class="pion" src="images/photos/2018aura/highlights-outdoor126.jpg" alt="Zdjęcie">
+  <figcaption>
+    <p class="lead">luty 2018, Jura Krakowsko-Częstochowska</p>
+    <p>klient: <a href="http://aurapoland.com">Aura</a></p>
+  </figcaption>
+</figure>
+</li>
+<li class="mountains">
+<figure>
+  <img class="pion" src="images/photos/2018aura/highlights-outdoor132.jpg" alt="Zdjęcie">
+  <figcaption>
+    <p class="lead">luty 2018, Jura Krakowsko-Częstochowska</p>
+    <p>klient: <a href="http://aurapoland.com">Aura</a></p>
+  </figcaption>
+</figure>
+</li>
+<li class="ski">
+<figure>
+  <img class="pion" src="images/photos/freeride/highlights-outdoor154.jpg" alt="Zdjęcie">
+  <figcaption>
+    <p class="lead">styczeń 2020, Alpy Bergamskie</p>
+    <p>klient: <a href="http://rascrepublic.pl">RASC Republic</a></p>
+  </figcaption>
+</figure>
+</li>
+<li class="trekking">
+<figure>
+  <img class="pion" src="images/photos/2018aura/highlights-outdoor099.jpg" alt="Zdjęcie">
+  <figcaption>
+    <p class="lead">luty 2018, Góry Stołowe</p>
+    <p>klient: <a href="http://aurapoland.com">Aura</a></p>
+  </figcaption>
+</figure>
+</li>
+<li class="ski">
+<figure>
+  <img class="pion" src="images/photos/freeride/highlights-outdoor152.jpg" alt="Zdjęcie">
+  <figcaption>
+    <p class="lead">styczeń 2020, Alpy Bergamskie</p>
+    <p>klient: <a href="http://rascrepublic.pl">RASC Republic</a></p>
+  </figcaption>
+</figure>
+</li>
+<li class="studio">
+<figure>
+  <img class="pion" src="images/photos/studio/highlights-outdoor081.jpg" alt="Zdjęcie">
+  <figcaption>
+    <p class="lead">październik 2019, Warszawa</p>
+    <p>klient: <a href="http://aurapoland.com">Aura</a></p>
+  </figcaption>
+</figure>
+</li>
+<li class="mountains">
+<figure>
+  <img class="pion" src="images/photos/2018aura/highlights-outdoor106.jpg" alt="Zdjęcie">
+  <figcaption>
+    <p class="lead">luty 2018, Jura Krakowsko-Częstochowska</p>
+    <p>klient: <a href="http://aurapoland.com">Aura</a></p>
+  </figcaption>
+</figure>
+</li>
+<li class="trekking">
+<figure>
+  <img class="pion" src="images/photos/2018aura/highlights-outdoor110.jpg" alt="Zdjęcie">
+  <figcaption>
+    <p class="lead">luty 2018, Góry Stołowe</p>
+    <p>klient: <a href="http://aurapoland.com">Aura</a></p>
+  </figcaption>
+</figure>
+</li>
+<li class="studio">
+<figure>
+  <img class="pion" src="images/photos/studio/highlights-outdoor079.jpg" alt="Zdjęcie">
+  <figcaption>
+    <p class="lead">październik 2019, Warszawa</p>
+    <p>klient: <a href="http://aurapoland.com">Aura</a></p>
+  </figcaption>
+</figure>
+</li>
+<li class="trekking">
+<figure>
+  <img class="pion" src="images/photos/sokoliki2016/highlights-outdoor002.jpg" alt="Zdjęcie">
+  <figcaption>
+    <p class="lead">styczeń 2016, Sokoliki</p>
+    <p>klient: <a href="http://aurapoland.com">Aura</a></p>
+  </figcaption>
+</figure>
+</li>
+<li class="trekking">
+<figure>
+  <img class="pion" src="images/photos/sokoliki2016/highlights-outdoor005.jpg" alt="Zdjęcie">
+  <figcaption>
+    <p class="lead">styczeń 2016, Sokoliki</p>
+    <p>klient: <a href="http://aurapoland.com">Aura</a></p>
+  </figcaption>
+</figure>
+</li>
+<li class="ski">
+<figure>
+  <img class="pion" src="images/photos/freeride/highlights-outdoor148.jpg" alt="Zdjęcie">
+  <figcaption>
+    <p class="lead">styczeń 2020, Alpy Bergamskie</p>
+    <p>klient: <a href="http://rascrepublic.pl">RASC Republic</a></p>
+  </figcaption>
+</figure>
+</li>
+<li class="military">
+<figure>
+  <img class="pion" src="images/photos/military/highlights-outdoor023.jpg" alt="Zdjęcie">
+  <figcaption>
+    <p class="lead">sierpień 2015, Polska</p>
+    <p>klient: <a href="http://downtofire.com">DTF Solutions</a></p>
+  </figcaption>
+</figure>
+</li>
+<li class="studio">
+<figure>
+  <img class="pion" src="images/photos/studio/highlights-outdoor078.jpg" alt="Zdjęcie">
+  <figcaption>
+    <p class="lead">październik 2019, Warszawa</p>
+    <p>klient: <a href="http://aurapoland.com">Aura</a></p>
+  </figcaption>
+</figure>
+</li>
+<li class="trekking">
+<figure>
+  <img class="pion" src="images/photos/sokoliki2016/highlights-outdoor006.jpg" alt="Zdjęcie">
+  <figcaption>
+    <p class="lead">styczeń 2016, Sokoliki</p>
+    <p>klient: <a href="http://aurapoland.com">Aura</a></p>
+  </figcaption>
+</figure>
+</li>
+<li class="studio">
+<figure>
+  <img class="pion" src="images/photos/studio/highlights-outdoor065.jpg" alt="Zdjęcie">
+  <figcaption>
+    <p class="lead">marzec 2019, Warszawa</p>
+    <p>klient: <a href="http://sportimpex.pl">Sportimpex</a></p>
+  </figcaption>
+</figure>
+</li>
+<li class="trekking">
+<figure>
+  <img class="pion" src="images/photos/2018aura/highlights-outdoor113.jpg" alt="Zdjęcie">
+  <figcaption>
+    <p class="lead">luty 2018, Ojcowski Park Narodowy</p>
+    <p>klient: <a href="http://aurapoland.com">Aura</a></p>
+  </figcaption>
+</figure>
+</li>
+<li class="military">
+<figure>
+  <img class="pion" src="images/photos/military/highlights-outdoor025.jpg" alt="Zdjęcie">
+  <figcaption>
+    <p class="lead">sierpień 2015, Polska</p>
+    <p>klient: <a href="http://downtofire.com">DTF Solutions</a></p>
+  </figcaption>
+</figure>
+</li>
+<li class="mountains">
+<figure>
+  <img class="pion" src="images/photos/sokoliki2016/highlights-outdoor008.jpg" alt="Zdjęcie">
+  <figcaption>
+    <p class="lead">styczeń 2016, Sokoliki</p>
+    <p>klient: <a href="http://aurapoland.com">Aura</a></p>
+  </figcaption>
+</figure>
+</li>
+<li class="studio">
+<figure>
+  <img class="pion" src="images/photos/studio/highlights-outdoor076.jpg" alt="Zdjęcie">
+  <figcaption>
+    <p class="lead">październik 2019, Warszawa</p>
+    <p>klient: <a href="http://aurapoland.com">Aura</a></p>
+  </figcaption>
+</figure>
+</li>
+<li class="trekking">
+<figure>
+  <img class="pion" src="images/photos/sokoliki2016/highlights-outdoor007.jpg" alt="Zdjęcie">
+  <figcaption>
+    <p class="lead">styczeń 2016, Sokoliki</p>
+    <p>klient: <a href="http://aurapoland.com">Aura</a></p>
+  </figcaption>
+</figure>
+</li>
+<li class="military">
+<figure>
+  <img class="pion" src="images/photos/military/highlights-outdoor027.jpg" alt="Zdjęcie">
+  <figcaption>
+    <p class="lead">sierpień 2015, Polska</p>
+    <p>klient: <a href="http://downtofire.com">DTF Solutions</a></p>
+  </figcaption>
+</figure>
+</li>
+<li class="mountains">
+<figure>
+  <img class="pion" src="images/photos/kazbek/highlights-outdoor177.jpg" alt="Zdjęcie">
+  <figcaption>
+    <p class="lead">sierpień 2019, Kaukaz</p>
+    <p>klient: <a href="http://aurapoland.com">Aura</a></p>
+  </figcaption>
+</figure>
+</li>
+<li class="studio">
+<figure>
+  <img class="pion" src="images/photos/sztuka-zywienia/highlights-outdoor063.jpg" alt="Zdjęcie">
+  <figcaption>
+    <p class="lead">październik 2016, Pruszków</p>
+    <p>klient: <a href="https://www.sztukazywienia.com/">Sztuka Żywienia</a></p>
+  </figcaption>
+</figure>
+</li>
+<li class="military">
+<figure>
+  <img class="pion" class="pion" src="images/photos/military/highlights-outdoor054.jpg" alt="Zdjęcie">
+  <figcaption>
+    <p class="lead">sierpień 2015, Polska</p>
+    <p>klient: <a href="http://downtofire.com">DTF Solutions</a></p>
+  </figcaption>
+</figure>
+</li>
+
+</ol>
+
+
+</div>
+<script src="js/index.js" type="text/javascript"></script>
+  <footer id="footer" class="fixed-bottom">
+
+    <p>
+      <a href="http://www.facebook.com/highlightspics" target="_blank"><i class="fab fa-facebook-f social_media_icons"></i></a>
+      <a href="https://www.instagram.com/slaweks13/" target="_blank"><i class="fab fa-instagram social_media_icons"></i></a>
+      <a href="mailto:info@highlightsphoto.pl" target="_blank"><i class="fas fa-envelope social_media_icons"></i></a>
+      <a href="tel:+48509487970"><i class="fas fa-phone-square social_media_icons"></i></a>
+    </p>
+    <p class="copyright">© Copyright 2020 Highlights Sp. z o.o.</p>
+
+  </footer>
+</body>
+
+</html>
